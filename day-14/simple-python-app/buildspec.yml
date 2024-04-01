@@ -12,7 +12,7 @@ phases:
   pre_build:
     commands:
       - echo "Installing dependencies..."
-      - pip install flask
+      - pip install flask   
   build:
     commands:
       - echo "Running tests..."
