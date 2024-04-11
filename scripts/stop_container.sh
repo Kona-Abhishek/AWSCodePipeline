@@ -5,5 +5,6 @@ set -e
 echo "Hi"
 containerid=$(docker ps --format '{{.ID}}')
 if [ -n "$containerid" ]; then
+    echo "Inside Loop"
     docker rm -f $containerid
 fi
