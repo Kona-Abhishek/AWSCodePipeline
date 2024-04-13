@@ -6,5 +6,5 @@ echo "Hi"
 containerid=$(docker ps | awk 'NR==2{print $1}')
 if [ -n "$containerid" ]
 then
-     docker rm -f $containerid
+     removed=$(docker rm -f $containerid)
 fi
